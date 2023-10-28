@@ -22,3 +22,26 @@
     padding: 8px 12px;
     cursor: pointer;
   }
+
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: Edu TAS Beginner;
+
+}
+
+.task-first {
+  margin-left: 20px;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+li {
+  margin-left: 10px;
+}
+
