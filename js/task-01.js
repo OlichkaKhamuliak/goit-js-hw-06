@@ -1,3 +1,6 @@
+const navigation = document.querySelector('a');
+navigation.classList.add("link");
+
 // Отримуємо посилання на елемент ul#categories + додаємо клас list
 const categoriesList = document.querySelector('#categories');
 categoriesList.classList.add("list");
@@ -32,5 +35,8 @@ categoryItems.forEach((categoryItem) => {
     };
 
     console.log(categoryInfo);
+    
+    // console.log(`Category: ${categoryName}`);
+    // console.log(`Elements: ${categoryElements.length}`);
 });
 

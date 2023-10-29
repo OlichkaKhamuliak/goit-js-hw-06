@@ -7,6 +7,9 @@ const ingredients = [
   'Condiments',
 ];
 
+const navigation = document.querySelector('a');
+navigation.classList.add("link");
+
 // // Отримуємо посилання на елемент ul#ingredients + додаємо клас list
 // const list = document.querySelector('#ingredients')
 // // console.dir(list);
