@@ -36,7 +36,7 @@ categoryItems.forEach((categoryItem) => {
 
     console.log(categoryInfo);
     
-    // console.log(`Category: ${categoryName}`);
-    // console.log(`Elements: ${categoryElements.length}`);
+//    console.log(`Category: ${categoryName}
+// Elements: ${categoryElements.length}`);
 });
 
