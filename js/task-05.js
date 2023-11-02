@@ -7,14 +7,17 @@ const nameInput = document.querySelector('#name-input');
 
 const nameOutput = document.querySelector('#name-output')
 
-nameInput.addEventListener('input', onInput);
+// nameInput.addEventListener('input', onInput);
 
-function onInput(evt) {
-    // evt.preventDefault() (скидаємо дефолтну/стандартну поведінку)
+// function onInput(evt) {
 
+//     const inputValue = nameInput.value;
 
-    const inputValue = nameInput.value;
-    // console.log(inputValue);
+//     nameOutput.textContent = inputValue || 'Anonymous'
+// }
 
-    nameOutput.textContent = inputValue || 'Anonymous'
-}
+//------------АБО--------------\\
+
+nameInput.addEventListener("input", (evt) => {
+    nameOutput.textContent = evt.currentTarget.value || 'Anonymous';
+});
