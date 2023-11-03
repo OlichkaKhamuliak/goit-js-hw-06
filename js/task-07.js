@@ -2,10 +2,15 @@ const navigation = document.querySelector('a');
 navigation.classList.add("link");
 
 
-const textInput = document.querySelector('#font-size-control')
+const textSize = document.querySelector('#font-size-control')
 const textElement = document.querySelector('#text')
 
-textInput.addEventListener('input', (evt) => {
-    const fontSize = textInput.value + 'px';
-    textElement.style.fontSize = fontSize;
+function defTextSize() {
+  textElement.style.fontSize = textSize.value + "px";
+}
+
+textSize.addEventListener('input', (evt) => {
+    textElement.style.fontSize = textSize.value + 'px';
 });
+
+defTextSize()

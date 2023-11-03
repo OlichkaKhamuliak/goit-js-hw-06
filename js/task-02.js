@@ -15,8 +15,8 @@ navigation.classList.add("link");
 // // console.dir(list);
 // list.classList.add("list");
 
-// // Створюємо фрагмент (Цей крок створює порожній DocumentFragment, який використовуватиметься для оптимізованого додавання багатьох елементів до DOM за одну операцію.)
-// const fragment = document.createDocumentFragment(); 
+// // Створюємо порожній масив
+// const liArr = []; 
 
 // //Перебираємо масив ingredients, створюємо та налаштовуємо кожен елемент <li>:
 // ingredients.forEach(ingredient => {
@@ -27,11 +27,11 @@ navigation.classList.add("link");
 
 // li.classList.add("item"); //Додаємо клас "item" до <li>
 
-// fragment.append(li) //Додаємо кожен <li> до DocumentFragment
+// liArr.push(li) //Додаємо кожен <li> до масиву liArr
 // });
 
-// //Вставляємо DocumentFragment з усіма <li> елементами в список <ul> (Всі елементи вставляються за одну операцію, що робить код більш продуктивним.)
-// list.append(fragment); 
+// //Вставляємо liArr з усіма <li> елементами в список <ul> (Всі елементи вставляються за одну операцію, що робить код більш продуктивним.)
+// list.append(...liArr); 
 
 
 //---------------------------АБО------------------------------//

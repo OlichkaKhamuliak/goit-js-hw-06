@@ -8,7 +8,9 @@ const inputValidation = document.getElementById('validation-input');
 inputValidation.addEventListener('blur', function (evt) {
     const expectedLength = parseInt(inputValidation.getAttribute('data-length')); // Отримуємо очікувану кількість символів
 
-    if (inputValidation.value.length > expectedLength) {
+    const inputText = inputValidation.value.trim(); // Видаляємо пробіли з початку та кінця введеного тексту
+
+    if (inputText.length === expectedLength) {
         inputValidation.classList.remove('invalid'); // Видаляємо клас "invalid"
         inputValidation.classList.add('valid'); // Додаємо клас "valid"
     } else {

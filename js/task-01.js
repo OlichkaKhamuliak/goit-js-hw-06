@@ -37,6 +37,11 @@ categoryItems.forEach((categoryItem) => {
     console.log(categoryInfo);
     
 //    console.log(`Category: ${categoryName}
-// Elements: ${categoryElements.length}`);
+  // Elements: ${categoryElements.length}`);
+  
+  //-------------------АБО----------------------\\
+  
+    // console.log(
+    // `Category: ${categoryItem.firstElementChild.textContent}\nElements: ${categoryItem.lastElementChild.children.length}`)
 });
 
