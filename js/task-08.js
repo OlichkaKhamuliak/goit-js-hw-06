@@ -2,6 +2,12 @@ const navigation = document.querySelector('a');
 navigation.classList.add("link");
 
 const formRegistration = document.querySelector('.login-form');
+formRegistration.style.fontFamily = 'Edu TAS Beginner';
+
+const btn = document.querySelector('button');
+btn.classList.add("btn");
+btn.style.margin = '0px'
+
 
 formRegistration.addEventListener('submit', handleSubmit);
 

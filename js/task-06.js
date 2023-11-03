@@ -4,6 +4,8 @@ navigation.classList.add("link");
 
 
 const inputValidation = document.getElementById('validation-input');
+inputValidation.style.width = '200px';
+inputValidation.style.fontFamily = 'Edu TAS Beginner';
 
 inputValidation.addEventListener('blur', function (evt) {
     const expectedLength = parseInt(inputValidation.getAttribute('data-length')); // Отримуємо очікувану кількість символів

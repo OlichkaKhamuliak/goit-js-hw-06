@@ -4,8 +4,14 @@ navigation.classList.add("link");
 
 
 const nameInput = document.querySelector('#name-input');
+nameInput.style.width = '200px';
+nameInput.style.fontFamily = 'Edu TAS Beginner';
 
 const nameOutput = document.querySelector('#name-output')
+
+const tittle = document.querySelector('h1')
+tittle.style.fontFamily = 'Edu TAS Beginner';
+
 
 // nameInput.addEventListener('input', onInput);
 
