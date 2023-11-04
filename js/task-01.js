@@ -14,8 +14,8 @@ const categoryItems = categoriesList.querySelectorAll('li.item');
 // Використовуємо forEach для перебору кожного елемента li.item
 categoryItems.forEach((categoryItem) => {
 
-    // Отримуємо текст заголовку (тегу <h2>) кожної категорії 
-    const categoryName = categoryItem.querySelector('h2').textContent;
+      console.log(
+    `Category: ${categoryItem.firstElementChild.textContent}\nElements: ${categoryItem.lastElementChild.children.length}`)
 
     // Знайдемо всі внутрішні списки ul
   const subcategoryLists = categoryItem.querySelectorAll('ul');
@@ -24,24 +24,5 @@ categoryItems.forEach((categoryItem) => {
     subcategoryLists.forEach((ul) => {
         ul.style.listStyleType = 'square';
       });
-
-    // Отримуємо всі елементи li в межах кожної категорії
-    const categoryElements = categoryItem.querySelectorAll('ul > li');
-
-    // Створюємо об'єкт для виведення в консоль
-    const categoryInfo = {
-        Category: categoryName,
-        Elements: categoryElements.length,
-    };
-
-    console.log(categoryInfo);
-    
-//    console.log(`Category: ${categoryName}
-  // Elements: ${categoryElements.length}`);
-  
-  //-------------------АБО----------------------\\
-  
-    // console.log(
-    // `Category: ${categoryItem.firstElementChild.textContent}\nElements: ${categoryItem.lastElementChild.children.length}`)
-});
+  });
 
