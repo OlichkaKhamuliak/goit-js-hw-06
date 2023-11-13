@@ -14,3 +14,10 @@ textSize.addEventListener('input', (evt) => {
 });
 
 defTextSize()
+
+// const numberLine = textSize.value
+// textElement.style.fontSize = `${numberLine}px`
+// textSize.addEventListener('input', () => {
+//     const number = textSize.value
+//     textElement.style.fontSize = `${number}px`
+// })
